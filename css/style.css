@@ -1,0 +1,249 @@
+body {
+ font-family: 'Exo 2', sans-serif;
+ font-style: normal;
+ font-weight: 400;
+ font-size: 100%;
+ color: #262626;
+
+ padding-top: 3%;
+ padding-bottom: 3%;
+
+ width: 100%
+}
+
+.visually_hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.visually_hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+
+  clip: rect(0, 0, 0, 0);
+}
+
+
+/*header*/
+.index_header {
+	width: 90%;
+    margin:0 auto;
+
+	margin-bottom: 5.5%;
+}
+
+.nav_list {
+	width: 50%;
+}
+
+.nav_item {
+	position: relative;
+}
+
+.nav_link {
+	font-weight: 600;
+}
+
+.nav_item:nth-child(1)::before {
+   content: "";
+   position: absolute;
+   top: 28%;
+   left: -19%;
+
+   background-image: url(../img/Group-2.svg);
+   width: 22px;
+   height: 17px;
+}
+
+.uk-list>li:nth-child(n+2), .uk-list>li>ul {
+    margin-top: 0;
+}
+
+/*main*/
+
+.index_main {
+	position: relative;
+    
+    width: 90%;
+    margin:0 auto;
+}
+
+.index_main::after {
+	content: "";
+	position: absolute;
+	top: 98%;
+	left: 0;
+
+	width: 100%;
+	height: 1px;
+	background-color: #E0E0E0;
+}
+
+.main_container_up {
+	width: 100%;
+    margin-bottom: 9%;
+}
+
+.first_container_up {
+   margin-top: 5.65%;
+}
+
+.about_us {
+   font-weight: 900;
+   font-size: 269%;
+   line-height: 50px;
+
+   width: 75%;
+   margin-bottom: 10%;
+}
+
+.about_us_list {
+   width: 78%;
+}
+
+.about_us_item {
+   margin-bottom: 6%;
+}
+
+.about_us_item:last-child {
+   margin-bottom: 0;
+}
+
+.slide_img_box {
+   position: absolute;
+   z-index: 1;
+}
+
+.slide_text_box {
+   width: 60%;
+   padding-left: 39%;
+   margin-top: 15%;
+}
+
+.slide_text_box h2 {
+   font-size: 32px;
+   font-weight: 600;
+   line-height: 38.5px;
+  
+   margin-bottom: 4%;
+}  
+
+.slide_text_box p {
+	padding: 0;
+	margin: 0;
+
+	margin-bottom: 9%;
+}
+
+.uk-list .goods_categories_list  {
+	width: auto;
+	padding: 0;
+
+	margin-bottom: 8.3%;
+}
+
+.category_name {
+  display: block;  
+
+  font-size: 12px;
+  line-height: 14px;  
+  color: #767676;
+}
+
+.category_value {
+	font-weight: 500;
+font-size: 16px;
+line-height: 19px;
+}
+
+.button_order {
+   width: 97%;
+   height: 20%;
+
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
+   color: #fff;
+   background: #F44336;
+   border-radius: 4px;
+}
+
+.main_container_down {
+	width: 100%;
+	margin: 0 auto;
+}
+
+.advantages_list {
+	padding-top: 6%;
+	margin-bottom: 4%;
+}
+
+.advantages_item {
+	position: relative;
+
+	text-align: center;
+    
+    width: 18%;
+	margin-right: 5%;
+}
+
+.advantages_item::before{
+	content: "";
+	position: absolute;
+
+	width: 80px;
+	height: 80px;
+
+	top: -262%;
+	left: 39%;
+}
+
+.advantages_item:nth-child(1)::before{
+	background-image: url(../img/Icon-made-in-russia.svg);
+}
+
+.advantages_item:nth-child(2)::before{
+	background-image: url(../img/Icon-glass-width.svg);
+}
+
+.advantages_item:nth-child(3)::before{
+	background-image: url(../img/Ресурс-4.svg);
+}
+
+.advantages_item:nth-child(4)::before{
+	background-image: url(../img/Ресурс-5.svg);
+}
+
+/*footer*/
+
+.main_footer {
+	width: 90%;
+	margin: 0 auto;
+}
+
+
+
+@media  (max-width: 320px)  {
+	body {
+		margin: 0 3%;
+	}
+
+}
+
+
